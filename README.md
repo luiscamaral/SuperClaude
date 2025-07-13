@@ -3,9 +3,16 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Version](https://img.shields.io/badge/version-2.0.1-blue.svg)](https://github.com/luiscamaral/SuperClaude)
 [![GitHub issues](https://img.shields.io/github/issues/luiscamaral/SuperClaude)](https://github.com/luiscamaral/SuperClaude/issues)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/luiscamaral/SuperClaude/blob/master/CONTRIBUTING.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/luiscamaral/SuperClaude/blob/latest/CONTRIBUTING.md)
 
 **A configuration framework that enhances Claude Code with specialized commands, cognitive personas, and development methodologies.**
+
+## 🌿 Branch Strategy
+
+- **`latest`** - Main development branch (default) - use for all development and contributions
+- **`master`** - Original project state (preserved for reference)
+
+**Note:** This repository uses `latest` as the main branch. All development, issues, and pull requests should target the `latest` branch.
 
 ## 🚀 Version 2.0.1 Update
 

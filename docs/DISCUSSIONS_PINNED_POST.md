@@ -5,8 +5,8 @@ Welcome to our community of developers enhancing their Claude Code experience wi
 ## 🚀 **Quick Start**
 
 **New to SuperClaude?** 
-- 📖 Read our [README](../blob/latest/README.md) 
-- 🛠️ Follow the [Installation Guide](../blob/latest/README.md#installation)
+- 📖 Read our [README](../README.md) 
+- 🛠️ Follow the [Installation Guide](../README.md#installation)
 - ❓ Ask questions in [Q&A](../../discussions/categories/q-a)
 
 **Ready to Contribute?**
@@ -58,11 +58,11 @@ Welcome to our community of developers enhancing their Claude Code experience wi
 
 ## 📚 **Resources**
 
-- **Documentation**: [README.md](../blob/latest/README.md)
-- **Contributing**: [Contributing Guide](../blob/latest/CONTRIBUTING.md)  
-- **Setup Help**: [GitHub Setup Guide](../blob/latest/GITHUB_SETUP.md)
+- **Documentation**: [README.md](../README.md)
+- **Contributing**: [Contributing Guide](./CONTRIBUTING.md)  
+- **Setup Help**: [GitHub Setup Guide](./GITHUB_SETUP.md)
 - **Bug Reports**: [Issues](../../issues)
-- **Full Guidelines**: [Discussions Welcome Guide](../blob/latest/DISCUSSIONS_WELCOME.md)
+- **Full Guidelines**: [Discussions Welcome Guide](./DISCUSSIONS_WELCOME.md)
 
 ## 🎉 **Let's Build Together!**
 
@@ -72,4 +72,4 @@ Whether you're here to learn, build, share, or contribute - you're in the right 
 
 ---
 
-*💡 **Pro tip**: Check out our [full community guidelines](../blob/latest/DISCUSSIONS_WELCOME.md) for detailed information about categories, moderation, and best practices.*
+*💡 **Pro tip**: Check out our [full community guidelines](./DISCUSSIONS_WELCOME.md) for detailed information about categories, moderation, and best practices.*

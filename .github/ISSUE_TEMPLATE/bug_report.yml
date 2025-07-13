@@ -11,7 +11,7 @@ body:
         
         **Before submitting:** Please check our [Discussions Q&A](../../discussions/categories/q-a) for similar issues.
         
-        **Community Guidelines:** Follow our [evidence-based approach](../blob/latest/DISCUSSIONS_WELCOME.md) - provide specific details and testing results.
+        **Community Guidelines:** Follow our [evidence-based approach](../blob/latest/docs/DISCUSSIONS_WELCOME.md) - provide specific details and testing results.
 
   - type: input
     id: superclaude-version

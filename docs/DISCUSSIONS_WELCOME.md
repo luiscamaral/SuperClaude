@@ -101,7 +101,7 @@ SuperClaude is a configuration framework that enhances Claude Code with speciali
 
 #### **🎯 Before Posting**
 - Search existing discussions for similar topics
-- Check the [README](../blob/latest/README.md) and documentation
+- Check the [README](../README.md) and documentation
 - Try basic troubleshooting steps
 - Prepare relevant information and context
 
@@ -191,8 +191,8 @@ If you believe a moderation action was incorrect:
 ## 🚀 **Getting Started**
 
 ### **New to SuperClaude?**
-1. **Read the Docs**: Start with our [README](../blob/latest/README.md)
-2. **Install SuperClaude**: Follow the [installation guide](../blob/latest/README.md#installation)
+1. **Read the Docs**: Start with our [README](../README.md)
+2. **Install SuperClaude**: Follow the [installation guide](../README.md#installation)
 3. **Introduce Yourself**: Share your background in [Community](../../discussions/categories/community)
 4. **Ask Questions**: Don't hesitate to use [Q&A](../../discussions/categories/q-a)
 
@@ -200,12 +200,12 @@ If you believe a moderation action was incorrect:
 1. **Share Your Experience**: Post in [Show and Tell](../../discussions/categories/show-and-tell)
 2. **Suggest Improvements**: Use [Ideas](../../discussions/categories/ideas-feature-requests)
 3. **Help Others**: Answer questions and share knowledge
-4. **Check Contributing**: See our [Contributing Guide](../blob/latest/CONTRIBUTING.md)
+4. **Check Contributing**: See our [Contributing Guide](./CONTRIBUTING.md)
 
 ### **Quick Links**
-- 📖 **Documentation**: [README.md](../blob/latest/README.md)
-- 🛠️ **Installation**: [Setup Guide](../blob/latest/README.md#installation)
-- 🤝 **Contributing**: [Contributing Guide](../blob/latest/CONTRIBUTING.md)
+- 📖 **Documentation**: [README.md](../README.md)
+- 🛠️ **Installation**: [Setup Guide](../README.md#installation)
+- 🤝 **Contributing**: [Contributing Guide](./CONTRIBUTING.md)
 - 🐛 **Bug Reports**: [Issues](../../issues)
 - 💬 **Discussions**: [All Categories](../../discussions)
 

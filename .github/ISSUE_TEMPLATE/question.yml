@@ -11,7 +11,7 @@ body:
         
         **Consider First:** Check our [Q&A Discussions](../../discussions/categories/q-a) for community help and existing answers.
         
-        **Evidence-Based Approach:** Follow our [community guidelines](../blob/latest/DISCUSSIONS_WELCOME.md) for constructive questions.
+        **Evidence-Based Approach:** Follow our [community guidelines](../blob/latest/docs/DISCUSSIONS_WELCOME.md) for constructive questions.
 
   - type: dropdown
     id: question-type

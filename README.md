@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Version](https://img.shields.io/badge/version-2.0.1-blue.svg)](https://github.com/luiscamaral/SuperClaude)
 [![GitHub issues](https://img.shields.io/github/issues/luiscamaral/SuperClaude)](https://github.com/luiscamaral/SuperClaude/issues)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/luiscamaral/SuperClaude/blob/latest/CONTRIBUTING.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/luiscamaral/SuperClaude/blob/latest/docs/CONTRIBUTING.md)
 
 **A configuration framework that enhances Claude Code with specialized commands, cognitive personas, and development methodologies.**
 
@@ -26,7 +26,7 @@ SuperClaude v2 introduces architectural improvements focused on maintainability 
 - **🔧 Modular Design**: Template system for adding new commands and features
 - **🎯 Unified Experience**: Consistent flag behavior across all commands
 
-See [ROADMAP.md](ROADMAP.md) for future development ideas and contribution opportunities.
+See [ROADMAP.md](docs/ROADMAP.md) for future development ideas and contribution opportunities.
 
 ## 🎯 Background
 
@@ -359,7 +359,7 @@ SuperClaude v2's architecture enables extensibility:
 
 - **Installation Help**: Run `./install.sh --help`
 - **Command Details**: Check `~/.claude/commands/`
-- **Contributing**: See [CONTRIBUTING.md](CONTRIBUTING.md)
+- **Contributing**: See [CONTRIBUTING.md](docs/CONTRIBUTING.md)
 - **Issues**: [GitHub Issues](https://github.com/luiscamaral/SuperClaude/issues)
 
 ## 🤝 Community

@@ -6,6 +6,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 SuperClaude is a configuration framework that enhances Claude Code with specialized commands, cognitive personas, and development methodologies. This is a configuration-driven framework rather than traditional source code - it consists of YAML configuration files, Markdown command definitions, and template patterns.
 
+### Branch Strategy
+- **`latest`** - Main development branch (default) - use for all development
+- **`master`** - Original project state (preserved for reference)
+
 ## Installation and Setup Commands
 
 ### Installation

@@ -1,5 +1,7 @@
 # Pull Request
 
+**Target Branch:** `latest` (main development branch)
+
 ## Legend
 | Symbol | Meaning | | Abbrev | Meaning |
 |--------|---------|---|--------|---------|

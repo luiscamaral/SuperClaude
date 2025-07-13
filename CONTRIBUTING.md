@@ -8,12 +8,18 @@
 
 Thanks for contributing to SuperClaude! This guide helps you get started.
 
+## Branch Strategy
+
+- **`latest`** - Main development branch (default) - target for all PRs
+- **`master`** - Original project state (preserved, read-only)
+
 ## Quick Start
 
 1. **Fork & Clone**
    ```bash
    git clone https://github.com/YOUR_USERNAME/SuperClaude.git
    cd SuperClaude
+   # Repository will automatically be on 'latest' branch (default)
    ```
 
 2. **Create Branch**

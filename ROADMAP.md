@@ -191,8 +191,8 @@ Potential integrations:
 
 ## Get Involved
 
-**GitHub Discussions**: [Join the conversation](https://github.com/NomenAK/SuperClaude/discussions)  
-**Issue Tracker**: [Report bugs and request features](https://github.com/NomenAK/SuperClaude/issues)
+**GitHub Discussions**: [Join the conversation](https://github.com/luiscamaral/SuperClaude/discussions)  
+**Issue Tracker**: [Report bugs and request features](https://github.com/luiscamaral/SuperClaude/issues)
 
 ---
 

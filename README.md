@@ -1,9 +1,9 @@
 # SuperClaude – Development Framework for Claude Code
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-2.0.1-blue.svg)](https://github.com/NomenAK/SuperClaude)
-[![GitHub issues](https://img.shields.io/github/issues/NomenAK/SuperClaude)](https://github.com/NomenAK/SuperClaude/issues)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/NomenAK/SuperClaude/blob/master/CONTRIBUTING.md)
+[![Version](https://img.shields.io/badge/version-2.0.1-blue.svg)](https://github.com/luiscamaral/SuperClaude)
+[![GitHub issues](https://img.shields.io/github/issues/luiscamaral/SuperClaude)](https://github.com/luiscamaral/SuperClaude/issues)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/luiscamaral/SuperClaude/blob/master/CONTRIBUTING.md)
 
 **A configuration framework that enhances Claude Code with specialized commands, cognitive personas, and development methodologies.**
 
@@ -47,7 +47,7 @@ SuperClaude enhances Claude Code with:
 The installer provides various options:
 
 ```bash
-git clone https://github.com/NomenAK/SuperClaude.git
+git clone https://github.com/luiscamaral/SuperClaude.git
 cd SuperClaude
 
 # Basic installation
@@ -330,7 +330,7 @@ SuperClaude v2's architecture enables extensibility:
 
 1. **Install SuperClaude**
    ```bash
-   git clone https://github.com/NomenAK/SuperClaude.git && cd SuperClaude && ./install.sh
+   git clone https://github.com/luiscamaral/SuperClaude.git && cd SuperClaude && ./install.sh
    ```
 
 2. **Validate Installation**
@@ -353,7 +353,7 @@ SuperClaude v2's architecture enables extensibility:
 - **Installation Help**: Run `./install.sh --help`
 - **Command Details**: Check `~/.claude/commands/`
 - **Contributing**: See [CONTRIBUTING.md](CONTRIBUTING.md)
-- **Issues**: [GitHub Issues](https://github.com/NomenAK/SuperClaude/issues)
+- **Issues**: [GitHub Issues](https://github.com/luiscamaral/SuperClaude/issues)
 
 ## 🤝 Community
 
@@ -363,7 +363,7 @@ SuperClaude welcomes contributions:
 - **Patterns** for development practices
 - **Integrations** for productivity tools
 
-Join the community: [Discussions](https://github.com/NomenAK/SuperClaude/discussions)
+Join the community: [Discussions](https://github.com/luiscamaral/SuperClaude/discussions)
 
 ## 📈 Version 2.0.1 Changes
 
@@ -390,14 +390,14 @@ SuperClaude provides a structured approach to using Claude Code with specialized
 
 *SuperClaude v2.0.1 – Development framework for Claude Code*
 
-[⭐ Star on GitHub](https://github.com/NomenAK/SuperClaude) | [💬 Discussions](https://github.com/NomenAK/SuperClaude/discussions) | [🐛 Report Issues](https://github.com/NomenAK/SuperClaude/issues)
+[⭐ Star on GitHub](https://github.com/luiscamaral/SuperClaude) | [💬 Discussions](https://github.com/luiscamaral/SuperClaude/discussions) | [🐛 Report Issues](https://github.com/luiscamaral/SuperClaude/issues)
 
 # Star History
 
-<a href="https://www.star-history.com/#NomenAK/SuperClaude&Date">
+<a href="https://www.star-history.com/#luiscamaral/SuperClaude&Date">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=NomenAK/SuperClaude&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=NomenAK/SuperClaude&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=NomenAK/SuperClaude&type=Date" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=luiscamaral/SuperClaude&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=luiscamaral/SuperClaude&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=luiscamaral/SuperClaude&type=Date" />
  </picture>
 </a>

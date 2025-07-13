@@ -1,151 +1,364 @@
-# CLAUDE.md - SuperClaude Configuration
+# CLAUDE.md
 
-You are SuperClaude, an enhanced version of Claude optimized for maximum efficiency and capability.
-You should use the following configuration to guide your behavior.
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Legend
-@include commands/shared/universal-constants.yml#Universal_Legend
+## Repository Overview
 
-## Core Configuration
-@include shared/superclaude-core.yml#Core_Philosophy
+SuperClaude is a configuration framework that enhances Claude Code with specialized commands, cognitive personas, and development methodologies. This is a configuration-driven framework rather than traditional source code - it consists of YAML configuration files, Markdown command definitions, and template patterns.
 
-## Thinking Modes
-@include commands/shared/flag-inheritance.yml#Universal Flags (All Commands)
+## Installation and Setup Commands
 
-## Introspection Mode
-@include commands/shared/introspection-patterns.yml#Introspection_Mode
-@include shared/superclaude-rules.yml#Introspection_Standards
+### Installation
+```bash
+# Install SuperClaude framework
+./install.sh                    # Install to ~/.claude/
+./install.sh --dir /custom/path # Install to custom location
+./install.sh --update          # Update existing installation
+./install.sh --verify-checksums # Verify installation integrity
+```
 
-## Advanced Token Economy
-@include shared/superclaude-core.yml#Advanced_Token_Economy
+### Framework Testing
+```bash
+# Verify installation works
+/load                          # Load project context
+/analyze --code --think        # Test basic analysis
+/analyze --persona-architect   # Test persona system
+```
 
-## UltraCompressed Mode Integration
-@include shared/superclaude-core.yml#UltraCompressed_Mode
+### Update and Maintenance
+```bash
+# Update framework
+./install.sh --update --backup
 
-## Code Economy
-@include shared/superclaude-core.yml#Code_Economy
+# Verify integrity
+./install.sh --verify-checksums
 
-## Cost & Performance Optimization
-@include shared/superclaude-core.yml#Cost_Performance_Optimization
+# Uninstall
+./install.sh --uninstall
+```
 
-## Intelligent Auto-Activation
-@include shared/superclaude-core.yml#Intelligent_Auto_Activation
+## Architecture Overview
 
-## Task Management
-@include shared/superclaude-core.yml#Task_Management
-@include commands/shared/task-management-patterns.yml#Task_Management_Hierarchy
+SuperClaude follows a modular, template-driven architecture:
 
-## Performance Standards
-@include shared/superclaude-core.yml#Performance_Standards
-@include commands/shared/compression-performance-patterns.yml#Performance_Baselines
+### Configuration Structure
+```
+.claude/
+├── shared/                    # Framework-wide configurations
+│   ├── superclaude-core.yml      # Core philosophy & token economy
+│   ├── superclaude-personas.yml  # 9 cognitive personas
+│   ├── superclaude-rules.yml     # Standards & practices
+│   └── superclaude-mcp.yml       # MCP server integration
+├── commands/                  # 18 specialized commands
+│   ├── analyze.md, build.md, etc. # Individual command definitions
+│   └── shared/                    # Shared command patterns
+│       ├── flag-inheritance.yml   # Universal flag system
+│       ├── universal-constants.yml # Symbols & abbreviations
+│       └── [24 pattern files]     # Architecture, security, quality patterns
+└── settings.local.json       # Local configuration
+```
 
-## Output Organization
-@include shared/superclaude-core.yml#Output_Organization
+### Template System
+- **@include references**: Template engine for configuration reuse
+- **Flag inheritance**: Universal flags available on all commands  
+- **Pattern libraries**: Shared behaviors for consistency
+- **Token optimization**: 70% reduction through template reuse
 
-
-## Session Management
-@include shared/superclaude-core.yml#Session_Management
-@include commands/shared/system-config.yml#Session_Settings
-
-## Rules & Standards
+## Core Design Principles
 
 ### Evidence-Based Standards
-@include shared/superclaude-core.yml#Evidence_Based_Standards
+- All claims must be backed by testing, metrics, or documentation
+- Prohibited language: "best|optimal|faster|secure|better|always|never"
+- Required language: "may|could|potentially|measured|documented"
+- Example: "Metrics show 15% performance improvement" (not "improved performance")
 
-### Standards
-@include shared/superclaude-core.yml#Standards
+### Token Economy
+- UltraCompressed mode (`--uc`) for 70% token reduction
+- Symbol system: → | & : » ∀ ∃ ∴ ∵ for efficient communication
+- Structure priority: YAML > Tables > Lists > Prose
+- Auto-compression when context >75% usage
 
-### Severity System
-@include commands/shared/quality-patterns.yml#Severity_Levels
-@include commands/shared/quality-patterns.yml#Validation_Sequence
+### Security & Quality
+- Project directory restrictions prevent external access
+- Git safety: Uncommitted changes warnings, branch validation
+- Progressive quality gates: Validation → Implementation → Testing
+- OWASP Top 10 compliance patterns
 
-### Smart Defaults & Handling
-@include shared/superclaude-rules.yml#Smart_Defaults
+## Command System
 
-### Ambiguity Resolution
-@include shared/superclaude-rules.yml#Ambiguity_Resolution
+### 18 Specialized Commands
+Commands are organized by development lifecycle:
 
-### Development Practices
-@include shared/superclaude-rules.yml#Development_Practices
+**Analysis & Investigation**
+- `/analyze` - Code and system analysis
+- `/scan` - Security and validation audits
+- `/troubleshoot` - Debugging and issue resolution
 
-### Code Generation
-@include shared/superclaude-rules.yml#Code_Generation
+**Development & Building** 
+- `/build` - Project builder with stack templates
+- `/design` - System architecture and patterns
+- `/dev-setup` - Development environment configuration
 
-### Session Awareness
-@include shared/superclaude-rules.yml#Session_Awareness
+**Quality & Improvement**
+- `/test` - Testing framework with coverage
+- `/improve` - Enhancement and optimization
+- `/review` - AI-powered code review
+- `/cleanup` - Project maintenance
 
-### Action & Command Efficiency
-@include shared/superclaude-rules.yml#Action_Command_Efficiency
+**Operations & Deployment**
+- `/deploy` - Application deployment
+- `/migrate` - Database and code migrations
+- `/git` - Git workflow management
 
-### Project Quality
-@include shared/superclaude-rules.yml#Project_Quality
+**Documentation & Workflow**
+- `/document` - Documentation creation
+- `/explain` - Code explanations
+- `/estimate` - Project estimation
+- `/task` - Task management
+- `/load` - Project context loading
+- `/spawn` - Parallel task execution
 
-### Security Standards
-@include shared/superclaude-rules.yml#Security_Standards
-@include commands/shared/security-patterns.yml#OWASP_Top_10
-@include commands/shared/security-patterns.yml#Validation_Levels
+### Universal Flags (Available on All Commands)
+```bash
+# Planning & Execution
+--plan              # Plan before execution
+--dry-run           # Preview changes
+--force             # Override safety checks
 
-### Efficiency Management
-@include shared/superclaude-rules.yml#Efficiency_Management
+# Thinking Depth
+--think             # Standard analysis
+--think-hard        # Deeper analysis  
+--ultrathink        # Maximum depth
 
-### Operations Standards
-@include shared/superclaude-rules.yml#Operations_Standards
+# Token Management
+--uc, --ultracompressed  # 70% token reduction
+--no-mcp            # Disable external servers
 
-## Model Context Protocol (MCP) Integration
+# MCP Server Control
+--c7                # Context7 (library docs)
+--seq               # Sequential (complex reasoning)
+--magic             # Magic (UI components)  
+--pup               # Puppeteer (browser automation)
+--all-mcp           # Enable all MCP servers
 
-### MCP Architecture
-@include commands/shared/flag-inheritance.yml#Universal Flags (All Commands)
-@include commands/shared/execution-patterns.yml#Servers
+# Cognitive Personas
+--persona-architect     # Systems design thinking
+--persona-frontend      # UX-focused development
+--persona-backend       # Server systems focus
+--persona-security      # Security-first analysis
+--persona-analyzer      # Root cause analysis
+--persona-qa            # Quality assurance
+--persona-performance   # Optimization focus
+--persona-refactorer    # Code quality improvement
+--persona-mentor        # Knowledge sharing
+```
 
-### Server Capabilities Extended
-@include shared/superclaude-mcp.yml#Server_Capabilities_Extended
+## Cognitive Personas
 
-### Token Economics
-@include shared/superclaude-mcp.yml#Token_Economics
+SuperClaude includes 9 specialized personas that provide domain-specific approaches:
 
-### Workflows
-@include shared/superclaude-mcp.yml#Workflows
+### Persona Characteristics
+Each persona has distinct:
+- **Identity & Core Beliefs**: Fundamental perspective
+- **Decision Framework**: How they prioritize concerns
+- **Risk Profile**: Conservative vs aggressive preferences
+- **Success Metrics**: Domain-specific quality measures  
+- **MCP Preferences**: Which external servers they prefer
+- **Problem-Solving Style**: Methodological approaches
 
-### Quality Control
-@include shared/superclaude-mcp.yml#Quality_Control
+### Usage Patterns
+```bash
+# Architecture work
+/design --api --ddd --persona-architect
 
-### Command Integration
-@include shared/superclaude-mcp.yml#Command_Integration
+# Frontend development  
+/build --react --magic --persona-frontend
+
+# Security review
+/scan --security --owasp --persona-security
+
+# Performance optimization
+/improve --performance --persona-performance
+```
+
+### Auto-Activation
+Personas automatically activate based on:
+- File types: `.tsx/.jsx` → frontend, `.test.*` → qa
+- Keywords: "slow/performance" → performance, "auth/secure" → security
+- Import patterns: UI libraries → frontend, testing → qa
+
+## MCP (Model Context Protocol) Integration
+
+### External Server Capabilities
+SuperClaude integrates with 4 MCP servers (must be installed separately):
+
+**Context7** (`--c7`)
+- Library documentation and code examples
+- Auto-triggers on import detection
+- Required for external library usage
+
+**Sequential** (`--seq`) 
+- Multi-step complex reasoning
+- Best for architecture, debugging, system design
+- High token cost but comprehensive analysis
+
+**Magic** (`--magic`)
+- UI component generation via 21st.dev
+- React/Vue components, design systems
+- Auto-suggests for UI-related tasks
+
+**Puppeteer** (`--pup`)
+- Browser automation and testing
+- E2E testing, performance monitoring
+- Low token cost, high reliability
+
+### MCP Usage Examples
+```bash
+# Research patterns require Context7
+/build --react --c7             # Look up React patterns
+
+# Complex analysis with Sequential
+/troubleshoot --investigate --seq   # Multi-step reasoning
+
+# UI development with Magic
+/build --component --magic      # Generate UI components
+
+# Testing with Puppeteer
+/test --e2e --pup              # Browser automation
+```
+
+## Development Workflows
+
+### Common Command Chains
+```bash
+# Full-stack development
+/load → /analyze --code → /design --api → /build --feature → /test --coverage → /deploy --staging
+
+# Bug investigation
+/troubleshoot --investigate --seq → /analyze --code --c7 → /improve → /test → /git
+
+# Feature implementation
+/analyze --code → /design --feature → /build --tdd → /test --coverage → /review --quality
+
+# Security review
+/scan --security --owasp → /analyze --architecture --seq → /improve --security → /test --security
+```
+
+### Quality Standards
+- All external library usage requires Context7 lookup (`--c7`)
+- Performance improvements must include metrics
+- Security changes require OWASP validation  
+- Features require test coverage and documentation
+- Git commits should be atomic and well-documented
+
+## Task Management
+
+SuperClaude implements a two-tier task system:
+
+### Level 1 Tasks (.claudedocs/tasks/)
+- High-level features spanning multiple sessions
+- Git branch integration
+- Markdown documentation with progress tracking
+- Session persistence and recovery
+
+### Level 2 Todos (TodoWrite/TodoRead) 
+- Real-time execution tracking within sessions
+- JSON objects with status updates
+- Immediate actionable steps
+- Auto-completion detection
+
+### Auto-Creation Triggers
+Tasks automatically create when:
+- Complexity: 6+ files, multi-step workflows, 30+ minute operations
+- Risk level: Database changes, deployments, security operations
+- Command patterns: Multiple targets, complex debugging scenarios
+
+## Key Patterns for Development
+
+### Evidence-Based Development
+- Document all architectural decisions with rationale
+- Provide metrics for performance claims
+- Include testing evidence for quality improvements  
+- Reference authoritative sources for implementations
+
+### Token Optimization
+- Use UltraCompressed mode (`--uc`) for complex projects
+- Leverage @include templates for consistency
+- Structured output: YAML > Tables > Lists > Prose
+- Symbol substitution for common technical concepts
+
+### Git Integration
+- Commands integrate with Git workflow automatically
+- Uncommitted changes trigger warnings before major operations
+- Branch creation suggestions for feature work
+- Atomic commits with standardized messages
 
 ### Error Recovery
-@include shared/superclaude-mcp.yml#Error_Recovery
+- Checkpoint system for complex operations
+- State restoration on session interruption  
+- Graceful degradation when MCP servers unavailable
+- Progressive fallback from external to native tools
 
-### Best Practices
-@include shared/superclaude-mcp.yml#Best_Practices
+## Troubleshooting
 
-### Session Management
-@include shared/superclaude-mcp.yml#Session_Management
+### Installation Issues
+```bash
+# Check installation
+./install.sh --verify-checksums
 
-## Cognitive Archetypes (Personas)
+# Reinstall if needed
+./install.sh --force --backup
 
-### Persona Architecture
-@include commands/shared/flag-inheritance.yml#Universal Flags (All Commands)
+# Check permissions
+ls -la ~/.claude/
+```
 
-### All Personas
-@include shared/superclaude-personas.yml#All_Personas
+### Command Issues
+```bash
+# Test basic functionality
+/load
+/analyze --code --think
 
-### Collaboration Patterns
-@include shared/superclaude-personas.yml#Collaboration_Patterns
+# Test MCP integration (if servers installed)
+/analyze --code --c7
 
-### Intelligent Activation Patterns
-@include shared/superclaude-personas.yml#Intelligent_Activation_Patterns
+# Test personas
+/analyze --persona-architect
+```
 
-### Command Specialization
-@include shared/superclaude-personas.yml#Command_Specialization
+### Framework Debugging
+```bash
+# Enable introspection mode for framework troubleshooting
+/troubleshoot --introspect
 
-### Integration Examples
-@include shared/superclaude-personas.yml#Integration_Examples
+# Analyze framework patterns
+/analyze --introspect --seq
 
-### Advanced Features
-@include shared/superclaude-personas.yml#Advanced_Features
+# Optimize token usage
+/improve --introspect --uc
+```
 
-### MCP + Persona Integration
-@include shared/superclaude-personas.yml#MCP_Persona_Integration
+## Contributing Guidelines
 
----
-*SuperClaude v2.0.1 | Development framework | Evidence-based methodology | Advanced Claude Code configuration*
+### Adding New Commands
+1. Create command.md in `.claude/commands/`
+2. Follow existing command structure pattern
+3. Include universal flag inheritance: `@include shared/flag-inheritance.yml#Universal_Always`
+4. Add command-specific flags and examples
+5. Update command index and documentation
+
+### Adding New Personas
+1. Define persona in `.claude/shared/superclaude-personas.yml`
+2. Include: identity, decision framework, risk profile, success metrics
+3. Specify MCP preferences and problem-solving style
+4. Add auto-activation triggers (file types, keywords)
+5. Update persona flag inheritance system
+
+### Pattern Development
+1. Create reusable patterns in `.claude/commands/shared/`
+2. Use @include reference system for consistency
+3. Follow token optimization principles
+4. Include validation and error handling
+5. Document pattern usage and examples
+
+This framework provides a sophisticated development environment that combines AI assistance with structured methodologies, specialized expertise, and token-efficient operations.

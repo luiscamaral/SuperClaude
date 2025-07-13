@@ -4,7 +4,7 @@
 # Installs SuperClaude configuration framework to enhance Claude Code
 # Version: 2.0.0
 # License: MIT
-# Repository: https://github.com/NomenAK/SuperClaude
+# Repository: https://github.com/luiscamaral/SuperClaude
 
 set -e  # Exit on error
 set -o pipefail  # Exit on pipe failure
@@ -698,7 +698,7 @@ get_installed_files() {
 # Parameters: None
 # Returns: 0 if update available, 1 if up to date, 2 on error
 check_for_updates() {
-    local repo_url="https://api.github.com/repos/nshkrdotcom/SuperClaude/releases/latest"
+    local repo_url="https://api.github.com/repos/luiscamaral/SuperClaude/releases/latest"
     
     if ! check_command curl; then
         log_error "curl is required for update checking"
@@ -732,7 +732,7 @@ check_for_updates() {
     # Compare versions using semantic version comparison
     if compare_versions "$SCRIPT_VERSION" "$latest_version"; then
         echo -e "${YELLOW}Update available!${NC}"
-        echo "Download: https://github.com/nshkrdotcom/SuperClaude/releases/latest"
+        echo "Download: https://github.com/luiscamaral/SuperClaude/releases/latest"
         return 0
     else
         echo -e "${GREEN}You have the latest version${NC}"

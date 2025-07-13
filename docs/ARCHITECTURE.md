@@ -130,6 +130,48 @@ SuperClaude is a sophisticated configuration framework that enhances Claude Code
 └─────────────────────────────────────────────────────────────┘
 ```
 
+```mermaid
+  graph TB
+    subgraph SuperClaude Framework
+      direction TB
+
+      subgraph "User Interface Layer"
+        direction LR
+        UI1["Claude Code CLI"]
+        UI2["Command Parser"]
+        UI3["Flag Processor"]
+      end
+
+      subgraph "Command & Persona Layer"
+        direction LR
+        CP1["18 Commands Framework"]
+        CP2["9 Personas System"]
+        CP3["Context Manager Engine"]
+      end
+
+      subgraph "Configuration Layer"
+        direction LR
+        CL1["YAML Templates System"]
+        CL2["@include Engine Processor"]
+        CL3["Settings Mgmt System"]
+      end
+
+      subgraph "Integration Layer"
+        direction LR
+        IL1["MCP Servers\n(Context7, Sequential…)"]
+        IL2["Token Economy\n(Compression)"]
+        IL3["Performance Monitoring"]
+      end
+
+      subgraph "Claude Code Foundation"
+        direction LR
+        F1["Core Claude API Integration"]
+        F2["File System Operations"]
+        F3["Git/GitHub Integration"]
+      end
+    end
+```
+
 ### 🔄 **Data Flow Architecture**
 
 ```

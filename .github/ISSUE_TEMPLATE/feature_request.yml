@@ -2,13 +2,16 @@
 name: ✨ Feature Request
 description: Suggest a new feature or enhancement for SuperClaude
 title: "[Feature] "
-labels: ["enhancement", "needs-discussion"]
+labels: ["type/enhancement", "status/needs-discussion"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for suggesting a feature! Please provide details to help us
-        understand your request.
+        Thanks for suggesting a feature! We love community-driven improvements.
+        
+        **Consider First:** Check our [Ideas & Feature Requests](../../discussions/categories/ideas-feature-requests) in Discussions for community feedback.
+        
+        **Evidence-Based Approach:** Please provide specific use cases and examples to support your request.
 
   - type: dropdown
     id: feature-type
@@ -19,9 +22,12 @@ body:
         - New Slash Command
         - New Persona
         - MCP Integration
+        - Token Economy Enhancement
         - Configuration Enhancement
         - Documentation Improvement
         - Installation/Setup
+        - Branch Strategy Improvement
+        - Community Feature
         - Other
     validations:
       required: true
@@ -31,7 +37,14 @@ body:
     attributes:
       label: Problem Description
       description: What problem does this feature solve?
-      placeholder: I'm frustrated when I try to... because...
+      placeholder: |
+        I'm frustrated when I try to... because...
+        
+        Current workflow limitations:
+        - Pain point 1
+        - Pain point 2
+        
+        Impact on productivity: [describe]
     validations:
       required: true
 
@@ -44,7 +57,13 @@ body:
         I would like to see...
 
         Example usage:
-        /newcommand --flag
+        /newcommand --flag --persona-newtype
+        
+        Expected output:
+        [describe expected behavior]
+        
+        Integration with existing features:
+        [how it works with current commands/personas]
     validations:
       required: true
 
@@ -53,7 +72,11 @@ body:
     attributes:
       label: Alternative Solutions
       description: Describe alternatives you've considered
-      placeholder: I also considered... but it doesn't work because...
+      placeholder: |
+        Alternative approaches I considered:
+        1. Using existing command X - but it doesn't work because...
+        2. Manual workaround Y - but it's inefficient because...
+        3. Third-party tool Z - but it doesn't integrate because...
     validations:
       required: false
 
@@ -63,9 +86,11 @@ body:
       label: Use Cases
       description: Describe specific scenarios where this would be useful
       placeholder: |
-        1. When working on React projects...
-        2. During code reviews...
-        3. For debugging performance issues...
+        1. When working on React projects with --persona-frontend...
+        2. During code reviews using /review --quality...
+        3. For debugging performance issues with /troubleshoot --perf...
+        4. In team environments where...
+        5. For CI/CD pipelines that...
     validations:
       required: true
 
@@ -75,11 +100,21 @@ body:
       label: Examples
       description: Provide concrete examples of how this feature would work
       placeholder: |
-        Command: /example --new-flag
-        Output: Expected behavior...
-
-        Persona usage:
-        /persona:newtype → specialized behavior
+        Command: /example --new-flag --persona-architect
+        Output: 
+        ```
+        → Analyzing architecture patterns...
+        → Evidence suggests: [specific finding]
+        → Recommendation: [actionable advice]
+        ```
+        
+        Persona integration:
+        - Works with --persona-architect for system design
+        - Enhances --persona-security for security analysis
+        
+        Token efficiency:
+        - Supports --uc mode for compression
+        - Expected token reduction: [if applicable]
     validations:
       required: false
 
@@ -101,7 +136,13 @@ body:
     attributes:
       label: Additional Context
       description: Add any other context, screenshots, or examples
-      placeholder: Links to similar features, mockups, related issues...
+      placeholder: |
+        - Links to similar features in other tools
+        - Mockups or diagrams (if UI-related)
+        - Related issues: #123, #456
+        - Community discussion: [link to discussions]
+        - Evidence from testing: [if you've prototyped]
+        - Performance considerations: [if applicable]
     validations:
       required: false
 
@@ -111,11 +152,13 @@ body:
       label: Checklist
       description: Please confirm the following
       options:
-        - label: I have searched for existing feature requests
+        - label: I have searched for existing feature requests and discussions
           required: true
-        - label: I have provided a clear use case
+        - label: I have provided a clear use case with evidence
           required: true
         - label: I'm willing to help test this feature
           required: false
         - label: I'm willing to help implement this feature
           required: false
+        - label: I understand this may be discussed in community discussions first
+          required: true

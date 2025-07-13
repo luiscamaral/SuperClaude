@@ -2,14 +2,16 @@
 name: ❓ Question
 description: Ask a question about SuperClaude usage or configuration
 title: "[Question] "
-labels: ["question", "help-wanted"]
+labels: ["type/question", "status/needs-response"]
 body:
   - type: markdown
     attributes:
       value: |
         Have a question about SuperClaude? We're here to help!
-        **Tip:** Consider using [Discussions](../../discussions) for general
-        questions and community help.
+        
+        **Consider First:** Check our [Q&A Discussions](../../discussions/categories/q-a) for community help and existing answers.
+        
+        **Evidence-Based Approach:** Follow our [community guidelines](../blob/latest/DISCUSSIONS_WELCOME.md) for constructive questions.
 
   - type: dropdown
     id: question-type
@@ -21,6 +23,8 @@ body:
         - Command Usage
         - Persona Configuration
         - MCP Integration
+        - Token Economy/UltraCompressed Mode
+        - Branch Strategy (latest vs master)
         - Troubleshooting
         - Best Practices
         - Other
@@ -32,7 +36,11 @@ body:
     attributes:
       label: Your Question
       description: What would you like to know?
-      placeholder: How do I... / Why does... / What's the best way to...
+      placeholder: |
+        How do I configure personas for my workflow?
+        Why does the /analyze command behave differently with --persona-architect?
+        What's the best way to integrate MCP servers with SuperClaude?
+        How do I enable UltraCompressed mode for token efficiency?
     validations:
       required: true
 
@@ -42,9 +50,10 @@ body:
       label: Context
       description: Provide context about what you're trying to achieve
       placeholder: |
-        I'm trying to...
-        My setup is...
-        I've already tried...
+        I'm trying to: [specific goal or workflow]
+        My setup is: SuperClaude v2.0.1, Claude Code v[version], [OS]
+        My current workflow: [describe current approach]
+        I've already tried: [list previous attempts]
     validations:
       required: false
 
@@ -54,10 +63,20 @@ body:
       label: Current Configuration
       description: Share relevant configuration or commands you're using
       placeholder: |
-        ```
-        /command --flags
-        Persona: architect
-        Claude Code version: latest
+        ```bash
+        # Command being used
+        /analyze --code --persona-architect --uc
+        
+        # .claude/settings.local.json (remove sensitive data)
+        {
+          "defaultPersona": "architect",
+          "tokenOptimization": true
+        }
+        
+        # System info
+        SuperClaude: v2.0.1
+        Claude Code: 0.20.0
+        Branch: latest
         ```
     validations:
       required: false
@@ -68,9 +87,11 @@ body:
       label: What Have You Tried?
       description: What solutions have you already attempted?
       placeholder: |
-        1. I tried reading the documentation...
-        2. I searched for similar issues...
-        3. I tested with different settings...
+        1. I read the README.md and checked documentation
+        2. I searched existing Q&A discussions and issues
+        3. I tested with different persona configurations: --persona-frontend, --persona-architect
+        4. I tried basic troubleshooting: reinstalling, checking .claude directory
+        5. I tested with and without --uc (UltraCompressed) mode
     validations:
       required: false
 
@@ -80,9 +101,13 @@ body:
       label: Checklist
       description: Please confirm the following
       options:
-        - label: I have read the README.md
+        - label: I have read the README.md and relevant documentation
           required: true
-        - label: I have searched existing issues and discussions
+        - label: I have searched existing Q&A discussions and issues
           required: true
         - label: This is not a bug report (use Bug Report template instead)
           required: true
+        - label: I understand this may be better suited for Discussions
+          required: false
+        - label: I have provided specific context and examples
+          required: false
